@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        body {
+            font-family: "Jersey 10", sans-serif;
+        }
+
+        .jukebox-title {
+            font-family: 'Jersey 10', cursive;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-yellow-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white shadow-2xl rounded-3xl border-8 border-pink-300 w-full max-w-md p-6 space-y-6">
+
+        <h1 class="jukebox-title text-4xl text-center text-pink-600">JUKEBOX</h1>
+
+        <div class="bg-black text-green-400 rounded-lg p-4 text-center text-sm font-mono shadow-inner">
+            Tocando agora: <span class="font-bold" id="playingNow">Nenhuma música</span>
+        </div>
+
+        <div id="musicList" class="grid grid-cols-2 gap-4">
+            <button class="bg-pink-200 hover:bg-pink-300 text-pink-800 py-2 px-4 rounded-lg shadow">Unshatter - Linkin Park</button>
+            <button class="bg-pink-200 hover:bg-pink-300 text-pink-800 py-2 px-4 rounded-lg shadow">Moonlight - Kali Uchis</button>
+            <button class="bg-pink-200 hover:bg-pink-300 text-pink-800 py-2 px-4 rounded-lg shadow">I ran - A Flock Of Seagulls</button>
+            <button class="bg-pink-200 hover:bg-pink-300 text-pink-800 py-2 px-4 rounded-lg shadow">Numb - Linkin Park</button>
+        </div>
+
+        <div class="flex justify-center">
+            <button class="bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300">PLAY</button>
+            <span class="mx-4 text-gray-600 text-lg font-semibold">or</span>
+            <button id="addMusic" onclick="addMusic()" class="bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300">ADD MUSIC</button>
+        </div>
+
+        <!-- Modal -->
+        <div id="musicModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+            <div class="bg-white rounded-lg p-6 w-96 shadow-xl">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Adicionar Música</h2>
+            <input type="text" id="musicInput" placeholder="Digite o nome da música" class="w-full border border-gray-300 rounded px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <div class="flex justify-end space-x-4">
+                <button onclick="closeModal()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded">Fechar</button>
+                <button onclick="submitMusic()" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded">Adicionar</button>
+            </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+<script src="assets/js/index.js"></script>
+
+</html>

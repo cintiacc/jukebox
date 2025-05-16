@@ -1,0 +1,56 @@
+{
+    "musicas": {
+      "nu_metal": [
+        {
+          "titulo": "Freak on a Leash",
+          "artista": "Korn",
+          "ano": 1998
+        },
+        {
+          "titulo": "In the End",
+          "artista": "Linkin Park",
+          "ano": 2000
+        },
+        {
+          "titulo": "My Generation",
+          "artista": "Limp Bizkit",
+          "ano": 2000
+        }
+      ],
+      "pop": [
+        {
+          "titulo": "Blinding Lights",
+          "artista": "The Weeknd",
+          "ano": 2019
+        },
+        {
+          "titulo": "Levitating",
+          "artista": "Dua Lipa",
+          "ano": 2020
+        },
+        {
+          "titulo": "As It Was",
+          "artista": "Harry Styles",
+          "ano": 2022
+        }
+      ],
+      "rock": [
+        {
+          "titulo": "Smells Like Teen Spirit",
+          "artista": "Nirvana",
+          "ano": 1991
+        },
+        {
+          "titulo": "Bohemian Rhapsody",
+          "artista": "Queen",
+          "ano": 1975
+        },
+        {
+          "titulo": "Seven Nation Army",
+          "artista": "The White Stripes",
+          "ano": 2003
+        }
+      ]
+    }
+  }
+  
